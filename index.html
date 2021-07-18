@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK-FRIDAY-MAKEUP!</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<script src="scripts/addToLocalStorage.js"></script>
+</head>
+<body>
+    <section id="top">
+        <div class="logo">
+            <img src="images/logob.png" alt="Boca">
+
+        </div>
+        <div class="conteudo">
+            <div>
+                <h3 class="titulo">As melhores marcas de maquiagem do mercado com descontos de até 70%.</h3>
+                <p>Ofertas excluivas pra maquiadores e empresas</p>
+                <p>Cadastre-se na nossa plataforma e receba em primeira mão nossas promoções</p>
+                <div class="carimbo">
+                    <img src="images/blackfridaycarimbo.jpg" alt="carimbo">
+                </div>
+            </div>
+            <div>
+                <form class="formulario">
+                    <input id="nome" type="text" name="nome" placeholder="Nome">
+                    <input id="email" type="email" name="email" placeholder="E-mail">
+                    <label>Selecione uma opção</label>
+                    <select id="option">
+                        <option>Compras no Varejo</option>
+                        <option>Compras no Atacado</option>
+                    </select>
+
+                    <div>
+                        <input type="checkbox" id="termos" name="aceite"
+                               checked>
+                        <label for="aceite">Aceito receber avisos de ofertas</label>
+                      </div>
+                    
+                    <button onclick="addToLocalStorage(event)" name="enviar">Cadastre-se</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id = "baixo"></section>
+
+    <div class="conteudo-bottom">
+        <div class="info">
+            <h3 id="title">Escolha uma categoria abaixo:</h3>
+            <div class="destaques">
+                <div>
+                    <img class="images" src="images/makeb1.jpg" alt="">
+                    <p class="destaque">Pincéis</p>
+                </div>
+                <div>
+                    <img class="images" src="images/batom.jpg" alt="">
+                    <p class="destaque">Batons</p>
+                </div>
+                <div>
+                    <img class="images" src="images/Paleta-4.jpg" alt="">
+                    <p class="destaque">Paletas de Sombra</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
